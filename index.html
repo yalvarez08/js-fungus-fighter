@@ -15,16 +15,16 @@
         <img src="./images/forest-bg-dk.png" alt="forest bg" class="img-bg">
 
         <div class="attacks">
-            <div class="ap-text">100 AP</div>
+            <div class="ap-text"></div>
             <progress id="ap-meter" value="100" max="100"></progress>
-            <button class="attack-btn arcane-scepter" onclick="handleArcaneClick()"></button>
-            <button class="attack-btn entangle" onclick="handleEntangleClick()"></button>
-            <button class="attack-btn dragon-blade" onclick="handleDragonClick()"></button>
-            <button class="attack-btn star-fire" onclick="handleStarClick()"></button>
+            <button class="attack-btn arcane-scepter" onclick="handleArcaneClick(event); scoreStateMinimum(event); fungusClassCondition(event)"></button>
+            <button class="attack-btn entangle" onclick="handleEntangleClick(event); scoreStateMinimum(event); fungusClassCondition(event)"></button>
+            <button class="attack-btn dragon-blade" onclick="handleDragonClick(event); scoreStateMinimum(event); fungusClassCondition(event)"></button>
+            <button class="attack-btn star-fire" onclick="handleStarClick(event); scoreStateMinimum(event); fungusClassCondition(event)"></button>
         </div>
 
         <div class="enemy">
-            <div class="hp-text">100 HP</div>
+            <div class="hp-text"></div>
             <progress id="hp-meter" value="100" max="100"></progress>
             <div class="freaky-fungus walk"></div>
         </div>
